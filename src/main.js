@@ -5,8 +5,10 @@ filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const selectedFilter = button.dataset.filter;
 
-    filterButtons.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
+    filterButtons.forEach((item) => {
+      item.classList.toggle("active", item === button);
+      item.setAttribute("aria-pressed", String(item === button));
+    });
 
     projectCards.forEach((card) => {
       const matchesFilter =
