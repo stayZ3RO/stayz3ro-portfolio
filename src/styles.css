@@ -1,21 +1,21 @@
 :root {
-  --bg: #090d13;
-  --bg-soft: #0d131b;
-  --panel: #111a24;
-  --panel-2: #152231;
-  --panel-3: #0f1720;
-  --text: #eef3f8;
-  --muted: #a7b3c2;
-  --subtle: #7d8b9a;
-  --border: #253648;
-  --border-strong: #34516b;
-  --accent: #67d4bd;
-  --accent-blue: #8dbde3;
-  --live: #74c67a;
-  --building: #d8a84f;
-  --planning: #89a7c8;
-  --focus: #9ee8d7;
-  --shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+  --bg: #0b1118;
+  --bg-soft: #101822;
+  --panel: #151f2b;
+  --panel-2: #1b2836;
+  --panel-3: #101923;
+  --text: #f2f5f8;
+  --muted: #b5c0cc;
+  --subtle: #8392a3;
+  --border: #2a3a4c;
+  --border-strong: #3b5369;
+  --accent: #8dbde3;
+  --accent-soft: #b8c7d9;
+  --live: #76c893;
+  --building: #d9a85a;
+  --planning: #92a9c4;
+  --focus: #b9dcff;
+  --shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
 }
 
 * {
@@ -62,7 +62,7 @@ summary:focus-visible {
   gap: 1rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  background: rgba(9, 13, 19, 0.96);
+  background: rgba(11, 17, 24, 0.96);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
 }
@@ -81,10 +81,10 @@ summary:focus-visible {
   flex: 0 0 auto;
   width: 36px;
   height: 36px;
-  border: 1px solid #366b63;
+  border: 1px solid var(--border-strong);
   border-radius: 8px;
-  background: #10211f;
-  color: var(--accent);
+  background: #142232;
+  color: var(--accent-soft);
   font-size: 0.8rem;
   font-weight: 900;
 }
@@ -198,7 +198,7 @@ h4 {
 
 .role-line {
   margin: 0.2rem 0 0;
-  color: var(--accent-blue);
+  color: var(--accent-soft);
   font-weight: 900;
 }
 
@@ -261,13 +261,13 @@ h4 {
 }
 
 .button.primary {
-  background: #153b34;
-  border-color: #2a7568;
-  color: #e9fffa;
+  background: #1f3a52;
+  border-color: #51728f;
+  color: #f2f8ff;
 }
 
 .button:hover {
-  background: #1b2b3b;
+  background: #223244;
 }
 
 .section-heading {
@@ -326,9 +326,9 @@ h4 {
 
 .filter-button.active,
 .filter-button:hover {
-  color: #eafffa;
-  background: #153b34;
-  border-color: #2a7568;
+  color: #f4f9ff;
+  background: #1f3a52;
+  border-color: #51728f;
 }
 
 .project-grid {
@@ -349,7 +349,7 @@ h4 {
   min-height: 132px;
   border: 1px dashed var(--border-strong);
   border-radius: 6px;
-  background: repeating-linear-gradient(135deg, #0c141d, #0c141d 10px, #0f1923 10px, #0f1923 20px);
+  background: repeating-linear-gradient(135deg, #111a24, #111a24 10px, #14202c 10px, #14202c 20px);
   color: var(--subtle);
   font-size: 0.9rem;
   font-weight: 900;
@@ -375,17 +375,17 @@ h4 {
 
 .status-live {
   color: var(--live);
-  background: rgba(116, 198, 122, 0.1);
+  background: rgba(118, 200, 147, 0.1);
 }
 
 .status-building {
   color: var(--building);
-  background: rgba(216, 168, 79, 0.1);
+  background: rgba(217, 168, 90, 0.1);
 }
 
 .status-planning {
   color: var(--planning);
-  background: rgba(137, 167, 200, 0.1);
+  background: rgba(146, 169, 196, 0.1);
 }
 
 .evidence-grid {
@@ -410,7 +410,7 @@ h4 {
 
 .honesty-note {
   padding: 0.75rem;
-  border-left: 3px solid var(--accent-blue);
+  border-left: 3px solid var(--accent);
   background: var(--panel-3);
   color: var(--muted);
 }
@@ -478,7 +478,7 @@ h4 {
 .build-list span {
   display: inline-block;
   margin-bottom: 0.45rem;
-  color: var(--accent-blue);
+  color: var(--accent);
   font-weight: 900;
 }
 
