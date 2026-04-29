@@ -411,3 +411,19 @@ h3 {
     width: 100%;
   }
 }
+.project-title-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.project-title-link:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.project-title-link[target="_blank"]::after {
+  content: " ↗";
+  color: var(--muted);
+  font-size: 0.85em;
+}
