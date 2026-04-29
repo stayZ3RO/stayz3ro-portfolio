@@ -8,7 +8,7 @@
     name="description"
     content="Christopher Austin Lorenzo, aka stayZ3RO, documents IT support, homelab, networking, static hosting, cloud, and self-hosted infrastructure projects."
   />
-  <link rel="stylesheet" href="src/styles.css?v=20260429-3" />
+  <link rel="stylesheet" href="src/styles.css?v=20260429-4" />
 </head>
 <body>
   <header class="site-header">
@@ -39,8 +39,8 @@
         <p class="role-line">aka stayZ3RO</p>
         <p class="hero-lede">IT Service Desk Analyst II building toward Cloud &amp; Network Engineering.</p>
         <p class="hero-text">
-          I document hands-on infrastructure projects across HA DNS, monitoring, remote access,
-          static hosting, Proxmox, Docker, and self-hosted services.
+          A technical portfolio for homelab infrastructure, deployment troubleshooting, monitoring,
+          networking fundamentals, and self-hosted project planning.
         </p>
 
         <div class="cta-row" aria-label="Primary links">
@@ -51,21 +51,35 @@
         </div>
       </div>
 
-      <aside class="role-card" aria-label="Current role summary">
-        <h2>Current Role</h2>
-        <p><strong>IT Service Desk Analyst II</strong></p>
-        <ul>
-          <li>Tier 2 support for Windows/macOS, Microsoft 365, VPN, Citrix, and enterprise applications.</li>
-          <li>Active Directory and Azure Entra ID identity/access administration, including SSO/MFA troubleshooting.</li>
-          <li>Escalated device, networking, and application support with SLA-focused documentation.</li>
-        </ul>
+      <aside class="showcase-panel" aria-label="Featured project evidence">
+        <div class="showcase-header">
+          <span class="panel-mark"></span>
+          <div>
+            <p class="eyebrow">Featured Evidence</p>
+            <h2>Work, repos, and validation notes.</h2>
+          </div>
+        </div>
+        <div class="showcase-stack">
+          <a href="https://github.com/stayZ3RO/home-network-infrastructure-HA-DNS" target="_blank" rel="noreferrer">
+            <span>Building</span>
+            <strong>HA DNS + monitoring lab</strong>
+          </a>
+          <a href="https://stayz3ro.github.io/css-doom-static-lab/" target="_blank" rel="noreferrer">
+            <span>Live</span>
+            <strong>GitHub Pages deployment</strong>
+          </a>
+          <a href="#building">
+            <span>Next</span>
+            <strong>Proxmox, Portainer, VPS/DNS track</strong>
+          </a>
+        </div>
       </aside>
     </section>
 
     <section class="proof section" id="proof" aria-labelledby="proof-title">
       <div class="section-heading compact-heading">
         <p class="eyebrow">Proof Snapshot</p>
-        <h2 id="proof-title">Quick signals for recruiters and infrastructure teams.</h2>
+        <h2 id="proof-title">Project proof at a glance.</h2>
       </div>
 
       <div class="proof-grid">
@@ -81,9 +95,7 @@
       <div class="section-heading">
         <p class="eyebrow">Project Evidence</p>
         <h2 id="projects-title">Case-study cards with problem, implementation, tools, and outcome.</h2>
-        <p>
-          Status labels distinguish live work from building and planning work. Planned items are intentionally marked as planned.
-        </p>
+        <p>Each card separates what exists now from what is still being built or planned.</p>
       </div>
 
       <div class="filter-row" aria-label="Project filters">
@@ -113,7 +125,7 @@
             <div><h4>Outcome</h4><p>Created a documented network lab showing DNS visibility, failover testing, monitoring, and remote administration.</p></div>
           </div>
           <details class="resume-bullet">
-            <summary>Resume bullet</summary>
+            <summary>How this maps to resume experience</summary>
             <p>Built and documented a multi-phase home infrastructure lab implementing HA Pi-hole DNS, Unbound recursive resolution, monitoring, alerting, and Tailscale remote access.</p>
           </details>
           <div class="project-links">
@@ -142,7 +154,7 @@
           </div>
           <p class="honesty-note">Scope note: my work focused on deployment, troubleshooting, and documentation, not building the DOOM engine from scratch.</p>
           <details class="resume-bullet">
-            <summary>Resume bullet</summary>
+            <summary>How this maps to resume experience</summary>
             <p>Deployed and troubleshot a Vite-based browser game through GitHub Actions and GitHub Pages, resolving production build and static asset routing issues.</p>
           </details>
           <div class="project-links">
@@ -171,7 +183,7 @@
             <div><h4>Outcome</h4><p>Defined an MVP and architecture for a self-hosted infrastructure inventory and documentation app.</p></div>
           </div>
           <details class="resume-bullet">
-            <summary>Resume bullet</summary>
+            <summary>How this maps to resume experience</summary>
             <p>Designed a self-hosted lab dashboard concept for tracking devices, services, networks, and documentation links across a homelab environment.</p>
           </details>
           <div class="project-links">
@@ -198,7 +210,7 @@
             <div><h4>Outcome</h4><p>Creating a service host for production-style containers and separate lab experimentation.</p></div>
           </div>
           <details class="resume-bullet">
-            <summary>Resume bullet</summary>
+            <summary>How this maps to resume experience</summary>
             <p>Built a Proxmox lab environment for Docker-based services, Portainer management, remote access, and separation of production-style and test workloads.</p>
           </details>
           <div class="project-links">
@@ -225,7 +237,7 @@
             <div><h4>Outcome</h4><p>Creating a cloud deployment track for public-facing static sites, subdomains, and future self-hosted apps.</p></div>
           </div>
           <details class="resume-bullet">
-            <summary>Resume bullet</summary>
+            <summary>How this maps to resume experience</summary>
             <p>Planned a VPS and domain deployment lab covering DNS records, custom domains, static hosting, and Linux-based service exposure.</p>
           </details>
           <div class="project-links">
@@ -305,7 +317,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>Built as a static portfolio site with HTML, CSS, JavaScript, GitHub, and GitHub Pages.</p>
+    <p>stayZ3RO infrastructure portfolio. Static, public, and project-focused.</p>
   </footer>
 
   <script src="src/main.js"></script>
