@@ -27,6 +27,7 @@ Proof points:
 - Alertmanager
 - Tailscale remote access
 - VLAN segmentation planning
+- Managed router and switch planning
 
 ### CSS DOOM Static Lab
 
@@ -47,6 +48,7 @@ Proof points:
 - Device, service, and network inventory planning
 - FastAPI / SQLite / frontend planning
 - Docker Compose deployment target
+- Portainer management target
 
 ### Proxmox + Portainer Lab
 
@@ -56,7 +58,7 @@ Proof points:
 - VM and container separation
 - Docker service management
 - Tailscale access
-- Prod vs test/dev environment planning
+- Production vs test/dev environment planning
 
 ### VPS / Domain Deployment Lab
 
@@ -75,3 +77,29 @@ Proof points:
 - Download Resume
 - View GitHub
 - Connect on LinkedIn
+
+## Portfolio Requirements
+
+The portfolio should include:
+
+- Hero section
+- About section
+- Featured projects
+- Skills grouped by category
+- Resume download
+- GitHub and LinkedIn links
+- Project case studies
+- Clear calls to action
+
+## Case Study Structure
+
+Each project should eventually include:
+
+- Problem
+- Implementation
+- Tools used
+- Troubleshooting
+- Outcome
+- Link to repo or live demo
+- Resume bullet
+- LinkedIn wording
