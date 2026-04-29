@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>stayZ3RO Portfolio | IT, Homelab, Cloud & Networking Projects</title>
+
+  <meta
+    name="description"
+    content="Portfolio for stayZ3RO: IT Service Desk Analyst II building toward cloud and network engineering through hands-on infrastructure, homelab, static hosting, and self-hosted projects."
+  />
+
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="stayZ3RO portfolio home">
+      <span class="brand-mark">Z3</span>
+      <span>stayZ3RO</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">IT Service Desk Analyst II → Cloud / Network Engineering</p>
+
+        <h1>Building practical infrastructure projects across DNS, monitoring, remote access, and static hosting.</h1>
+
+        <p class="hero-text">
+          I’m documenting hands-on labs that connect enterprise IT support experience with cloud, networking,
+          Linux, GitHub workflows, and self-hosted infrastructure.
+        </p>
+
+        <div class="cta-row">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button" href="assets/resume/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+          <a class="button" href="https://github.com/stayZ3RO" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="proof-strip" aria-label="Portfolio focus areas">
+          <span>HA DNS</span>
+          <span>Pi-hole</span>
+          <span>Unbound</span>
+          <span>Grafana</span>
+          <span>Tailscale</span>
+          <span>GitHub Pages</span>
+          <span>Proxmox</span>
+          <span>Docker</span>
+        </div>
+      </div>
+
+      <aside class="status-card" aria-label="Current portfolio status">
+        <div class="status-card-header">
+          <span class="status-dot"></span>
+          <span>Current Build Focus</span>
+        </div>
+
+        <ul>
+          <li>Documenting homelab infrastructure work</li>
+          <li>Publishing static-hosted project demos</li>
+          <li>Building recruiter-facing case studies</li>
+          <li>Cross-referencing GitHub, resume, and LinkedIn</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Support background with infrastructure-focused project work.</h2>
+      </div>
+
+      <div class="about-grid">
+        <p>
+          My day-to-day foundation is IT support: troubleshooting users, endpoints, access issues, Microsoft 365,
+          remote support, documentation, and ticket-driven work. Outside of that, I’m building infrastructure labs
+          to practice the systems behind cloud and network engineering.
+        </p>
+
+        <p>
+          This portfolio is meant to show proof: diagrams, repositories, deployment notes, troubleshooting logs,
+          screenshots, and project outcomes. The goal is not to look polished without substance — it is to make the
+          technical work easy to inspect.
+        </p>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Projects</p>
+        <h2>Project evidence recruiters and hiring managers can inspect.</h2>
+      </div>
+
+      <div class="filter-row" aria-label="Project filters">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="networking">Networking</button>
+        <button class="filter-button" data-filter="cloud">Cloud / Hosting</button>
+        <button class="filter-button" data-filter="self-hosted">Self-Hosted</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="networking">
+          <div class="card-topline">
+            <span class="project-status">In Progress</span>
+            <span>Networking</span>
+          </div>
+
+          <h3>Home Network Infrastructure Lab</h3>
+
+          <p>
+            Multi-phase home infrastructure lab covering DNS control, HA Pi-hole, recursive DNS, monitoring,
+            alerting, remote access, and VLAN segmentation planning.
+          </p>
+
+          <div class="tech-list">
+            <span>Pi-hole</span>
+            <span>Keepalived</span>
+            <span>Unbound</span>
+            <span>Prometheus</span>
+            <span>Grafana</span>
+            <span>Tailscale</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/stayZ3RO/home-network-infrastructure-HA-DNS" target="_blank" rel="noreferrer">Repo</a>
+            <a href="#case-studies">Case Study</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="cloud">
+          <div class="card-topline">
+            <span class="project-status complete">Live</span>
+            <span>Static Hosting</span>
+          </div>
+
+          <h3>CSS DOOM Static Lab</h3>
+
+          <p>
+            Imported and deployed a Vite-based browser game through GitHub Actions and GitHub Pages, then resolved
+            production build path and static asset routing issues.
+          </p>
+
+          <div class="tech-list">
+            <span>GitHub Pages</span>
+            <span>GitHub Actions</span>
+            <span>Vite</span>
+            <span>JavaScript</span>
+            <span>Static Assets</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://stayz3ro.github.io/css-doom-static-lab/" target="_blank" rel="noreferrer">Live Demo</a>
+            <a href="https://github.com/stayZ3RO/css-doom-static-lab" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="self-hosted">
+          <div class="card-topline">
+            <span class="project-status">Planning</span>
+            <span>Self-Hosted App</span>
+          </div>
+
+          <h3>Lab Command Center</h3>
+
+          <p>
+            Planned self-hosted dashboard for tracking networks, devices, services, documentation links, and lab
+            assets across a home infrastructure environment.
+          </p>
+
+          <div class="tech-list">
+            <span>FastAPI</span>
+            <span>SQLite</span>
+            <span>Next.js</span>
+            <span>Docker Compose</span>
+            <span>Portainer</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" aria-label="Lab Command Center repo coming soon">Repo Soon</a>
+            <a href="#case-studies">Case Study</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="self-hosted">
+          <div class="card-topline">
+            <span class="project-status">Building</span>
+            <span>Virtualization</span>
+          </div>
+
+          <h3>Proxmox + Portainer Lab</h3>
+
+          <p>
+            Home server environment for separating production-style services from test/dev workloads using Proxmox,
+            Linux VMs, Docker services, and Portainer management.
+          </p>
+
+          <div class="tech-list">
+            <span>Proxmox</span>
+            <span>Ubuntu/Debian</span>
+            <span>Docker</span>
+            <span>Portainer</span>
+            <span>Tailscale</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" aria-label="Proxmox Portainer repo coming soon">Repo Soon</a>
+            <a href="#case-studies">Case Study</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="cloud">
+          <div class="card-topline">
+            <span class="project-status">Planning</span>
+            <span>Cloud / DNS</span>
+          </div>
+
+          <h3>VPS + Domain Deployment Lab</h3>
+
+          <p>
+            Planned cloud deployment track for learning VPS hosting, DNS records, static deployments, subdomains,
+            reverse proxy concepts, and external service exposure.
+          </p>
+
+          <div class="tech-list">
+            <span>VPS</span>
+            <span>DNS</span>
+            <span>Cloudflare</span>
+            <span>Linux</span>
+            <span>Domains</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" aria-label="VPS Domain lab repo coming soon">Repo Soon</a>
+            <a href="#case-studies">Case Study</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Grouped by the systems I’m working with.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Networking</h3>
+          <p>DNS, DHCP, VLANs, routing concepts, firewall rules, VPN, Tailscale, IP planning</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Cloud / Hosting</h3>
+          <p>GitHub Pages, GitHub Actions, Cloudflare Pages planning, DNS records, static deployments</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Systems / Homelab</h3>
+          <p>Linux, Proxmox, Docker, Portainer, Raspberry Pi, Windows, WSL Ubuntu</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Monitoring</h3>
+          <p>Pi-hole, Prometheus, Grafana, Alertmanager, Blackbox exporter, uptime checks</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Enterprise IT</h3>
+          <p>Microsoft 365, Entra ID, Exchange Online, Intune concepts, Jira/JSM, remote support</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Documentation</h3>
+          <p>README files, deployment notes, troubleshooting logs, screenshots, case studies</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-studies" id="case-studies">
+      <div class="section-heading">
+        <p class="eyebrow">Case Studies</p>
+        <h2>Each project gets mapped to problem, implementation, troubleshooting, and outcome.</h2>
+      </div>
+
+      <div class="case-study-list">
+        <article>
+          <h3>Home Network Infrastructure Lab</h3>
+          <p>
+            Focus: HA DNS, recursive resolution, monitoring, failover validation, remote access, and segmentation.
+          </p>
+        </article>
+
+        <article>
+          <h3>CSS DOOM Static Lab</h3>
+          <p>
+            Focus: static hosting, GitHub Actions, Vite builds, production asset routing, deployment validation.
+          </p>
+        </article>
+
+        <article>
+          <h3>Lab Command Center</h3>
+          <p>
+            Focus: self-hosted app planning, data modeling, frontend/backend separation, Docker deployment.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section resume" id="resume">
+      <div class="resume-panel">
+        <div>
+          <p class="eyebrow">Resume</p>
+          <h2>Download the project-aligned resume.</h2>
+          <p>
+            Use a public-safe PDF version. Avoid publishing your home address or personal phone number directly
+            in a public repo.
+          </p>
+        </div>
+
+        <a class="button primary" href="assets/resume/resume.pdf" target="_blank" rel="noreferrer">
+          Download Resume
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Project links and professional profiles.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <a href="https://github.com/stayZ3RO" target="_blank" rel="noreferrer">
+          <span>GitHub</span>
+          <strong>github.com/stayZ3RO</strong>
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+          <span>LinkedIn</span>
+          <strong>Add your real LinkedIn URL</strong>
+        </a>
+
+        <a href="https://stayz3ro.github.io/css-doom-static-lab/" target="_blank" rel="noreferrer">
+          <span>Live Demo</span>
+          <strong>CSS DOOM Static Lab</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built as a static portfolio site with HTML, CSS, JavaScript, GitHub, and GitHub Pages.</p>
+  </footer>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
