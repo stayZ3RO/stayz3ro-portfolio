@@ -21,7 +21,9 @@
     </a>
 
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="#projects">Projects</a>
+      <a href="#proof">Proof</a>
+      <a href="#projects">Case Studies</a>
+      <a href="#building">Currently Building</a>
       <a href="#skills">Skills</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
@@ -31,47 +33,62 @@
   <main id="top">
     <section class="hero section">
       <div class="hero-copy">
-        <p class="eyebrow">IT Service Desk Analyst II → Cloud / Network Engineering</p>
+        <p class="eyebrow">IT Service Desk Analyst II -> Cloud / Network Engineering</p>
 
-        <h1>Building practical infrastructure projects across DNS, monitoring, remote access, and static hosting.</h1>
+        <h1>Infrastructure proof, not a landing page.</h1>
 
         <p class="hero-text">
-          I’m documenting hands-on labs that connect enterprise IT support experience with cloud, networking,
-          Linux, GitHub workflows, and self-hosted infrastructure.
+          Hands-on labs across IT support, DNS, monitoring, remote access, GitHub Pages, Proxmox,
+          Docker, and self-hosted services. Built to make the technical work easy to inspect.
         </p>
 
         <div class="cta-row">
-          <a class="button primary" href="#projects">View Projects</a>
-          <a class="button" href="assets/resume/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+          <a class="button primary" href="#projects">Review Case Studies</a>
+          <a class="button" href="assets/resume/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
           <a class="button" href="https://github.com/stayZ3RO" target="_blank" rel="noreferrer">GitHub</a>
           <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
-
-        <div class="proof-strip" aria-label="Portfolio focus areas">
-          <span>HA DNS</span>
-          <span>Pi-hole</span>
-          <span>Unbound</span>
-          <span>Grafana</span>
-          <span>Tailscale</span>
-          <span>GitHub Pages</span>
-          <span>Proxmox</span>
-          <span>Docker</span>
-        </div>
       </div>
 
-      <aside class="status-card" aria-label="Current portfolio status">
-        <div class="status-card-header">
+      <aside class="ops-panel" aria-label="Current portfolio status">
+        <div class="panel-header">
           <span class="status-dot"></span>
-          <span>Current Build Focus</span>
+          <span>Portfolio Signal</span>
         </div>
-
-        <ul>
-          <li>Documenting homelab infrastructure work</li>
-          <li>Publishing static-hosted project demos</li>
-          <li>Building recruiter-facing case studies</li>
-          <li>Cross-referencing GitHub, resume, and LinkedIn</li>
-        </ul>
+        <dl class="signal-list">
+          <div>
+            <dt>Primary track</dt>
+            <dd>Cloud and network engineering readiness</dd>
+          </div>
+          <div>
+            <dt>Evidence type</dt>
+            <dd>Repos, screenshots, deployment notes, troubleshooting logs</dd>
+          </div>
+          <div>
+            <dt>Support base</dt>
+            <dd>Microsoft 365, remote support, endpoint and access troubleshooting</dd>
+          </div>
+        </dl>
       </aside>
+    </section>
+
+    <section class="proof-metrics section" id="proof" aria-label="Infrastructure proof metrics">
+      <div class="metric-card">
+        <span class="metric-value">5</span>
+        <span class="metric-label">Infrastructure case studies</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">8+</span>
+        <span class="metric-label">Core tools documented</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">24/7</span>
+        <span class="metric-label">Monitoring and DNS lab focus</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">Live</span>
+        <span class="metric-label">GitHub Pages deployment path</span>
+      </div>
     </section>
 
     <section class="section about" id="about">
@@ -82,22 +99,22 @@
 
       <div class="about-grid">
         <p>
-          My day-to-day foundation is IT support: troubleshooting users, endpoints, access issues, Microsoft 365,
-          remote support, documentation, and ticket-driven work. Outside of that, I’m building infrastructure labs
-          to practice the systems behind cloud and network engineering.
+          My day-to-day foundation is IT support: troubleshooting users, endpoints, access issues,
+          Microsoft 365, remote support, documentation, and ticket-driven work. Outside of that, I
+          build infrastructure labs to practice the systems behind cloud and network engineering.
         </p>
 
         <p>
-          This portfolio is meant to show proof: diagrams, repositories, deployment notes, troubleshooting logs,
-          screenshots, and project outcomes. The goal is not to look polished without substance — it is to make the
-          technical work easy to inspect.
+          This portfolio is meant to show proof: diagrams, repositories, deployment notes,
+          troubleshooting logs, screenshots, and project outcomes. The goal is to make the technical
+          work easy to inspect without hiding it behind vague marketing copy.
         </p>
       </div>
     </section>
 
     <section class="section projects" id="projects">
       <div class="section-heading">
-        <p class="eyebrow">Featured Projects</p>
+        <p class="eyebrow">Case Studies</p>
         <h2>Project evidence recruiters and hiring managers can inspect.</h2>
       </div>
 
@@ -110,6 +127,9 @@
 
       <div class="project-grid" id="projectGrid">
         <article class="project-card" data-category="networking">
+          <div class="project-media" aria-label="Screenshot placeholder for Home Network Infrastructure Lab">
+            <span>Screenshot: DNS failover / Grafana dashboard</span>
+          </div>
           <div class="card-topline">
             <span class="project-status">In Progress</span>
             <span>Networking</span>
@@ -117,27 +137,35 @@
 
           <h3>Home Network Infrastructure Lab</h3>
 
-          <p>
-            Multi-phase home infrastructure lab covering DNS control, HA Pi-hole, recursive DNS, monitoring,
-            alerting, remote access, and VLAN segmentation planning.
-          </p>
-
-          <div class="tech-list">
-            <span>Pi-hole</span>
-            <span>Keepalived</span>
-            <span>Unbound</span>
-            <span>Prometheus</span>
-            <span>Grafana</span>
-            <span>Tailscale</span>
+          <div class="case-study-points">
+            <div>
+              <h4>Problem</h4>
+              <p>Build a home network lab that demonstrates DNS control, redundancy, monitoring, and remote access instead of only listing tools.</p>
+            </div>
+            <div>
+              <h4>Implementation</h4>
+              <p>Configured HA Pi-hole planning, recursive DNS with Unbound, monitoring with Prometheus/Grafana, and remote access with Tailscale.</p>
+            </div>
+            <div>
+              <h4>Tools</h4>
+              <p>Pi-hole, Keepalived, Unbound, Prometheus, Grafana, Alertmanager, Tailscale.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Creates inspectable infrastructure evidence: failover notes, dashboards, repo documentation, and segmentation planning.</p>
+            </div>
           </div>
 
           <div class="project-links">
             <a href="https://github.com/stayZ3RO/home-network-infrastructure-HA-DNS" target="_blank" rel="noreferrer">Repo</a>
-            <a href="#case-studies">Case Study</a>
+            <a href="#case-studies">Evidence Notes</a>
           </div>
         </article>
 
         <article class="project-card" data-category="cloud">
+          <div class="project-media" aria-label="Screenshot placeholder for CSS DOOM Static Lab">
+            <span>Screenshot: GitHub Pages deployment</span>
+          </div>
           <div class="card-topline">
             <span class="project-status complete">Live</span>
             <span>Static Hosting</span>
@@ -145,17 +173,23 @@
 
           <h3>CSS DOOM Static Lab</h3>
 
-          <p>
-            Imported and deployed a Vite-based browser game through GitHub Actions and GitHub Pages, then resolved
-            production build path and static asset routing issues.
-          </p>
-
-          <div class="tech-list">
-            <span>GitHub Pages</span>
-            <span>GitHub Actions</span>
-            <span>Vite</span>
-            <span>JavaScript</span>
-            <span>Static Assets</span>
+          <div class="case-study-points">
+            <div>
+              <h4>Problem</h4>
+              <p>Move a Vite browser project from local-only behavior to a public static deployment with working production assets.</p>
+            </div>
+            <div>
+              <h4>Implementation</h4>
+              <p>Imported the project, configured GitHub Actions, deployed to GitHub Pages, and fixed build path/static asset routing issues.</p>
+            </div>
+            <div>
+              <h4>Tools</h4>
+              <p>GitHub Pages, GitHub Actions, Vite, JavaScript, static assets, repository workflow.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Live deployment path proves build troubleshooting, static hosting fundamentals, and GitHub Pages release flow.</p>
+            </div>
           </div>
 
           <div class="project-links">
@@ -165,6 +199,9 @@
         </article>
 
         <article class="project-card" data-category="self-hosted">
+          <div class="project-media" aria-label="Screenshot placeholder for Lab Command Center">
+            <span>Screenshot: service inventory view</span>
+          </div>
           <div class="card-topline">
             <span class="project-status">Planning</span>
             <span>Self-Hosted App</span>
@@ -172,26 +209,35 @@
 
           <h3>Lab Command Center</h3>
 
-          <p>
-            Planned self-hosted dashboard for tracking networks, devices, services, documentation links, and lab
-            assets across a home infrastructure environment.
-          </p>
-
-          <div class="tech-list">
-            <span>FastAPI</span>
-            <span>SQLite</span>
-            <span>Next.js</span>
-            <span>Docker Compose</span>
-            <span>Portainer</span>
+          <div class="case-study-points">
+            <div>
+              <h4>Problem</h4>
+              <p>Track devices, services, documentation, and operational notes across a growing home infrastructure environment.</p>
+            </div>
+            <div>
+              <h4>Implementation</h4>
+              <p>Designing a self-hosted dashboard with structured records for networks, services, assets, links, and lab status.</p>
+            </div>
+            <div>
+              <h4>Tools</h4>
+              <p>FastAPI, SQLite, Next.js planning, Docker Compose, Portainer, Linux.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Turns homelab sprawl into a documented operations surface that can show service ownership and environment state.</p>
+            </div>
           </div>
 
           <div class="project-links">
             <a href="#" aria-label="Lab Command Center repo coming soon">Repo Soon</a>
-            <a href="#case-studies">Case Study</a>
+            <a href="#case-studies">Evidence Notes</a>
           </div>
         </article>
 
         <article class="project-card" data-category="self-hosted">
+          <div class="project-media" aria-label="Screenshot placeholder for Proxmox and Portainer Lab">
+            <span>Screenshot: Proxmox nodes / Portainer stacks</span>
+          </div>
           <div class="card-topline">
             <span class="project-status">Building</span>
             <span>Virtualization</span>
@@ -199,26 +245,35 @@
 
           <h3>Proxmox + Portainer Lab</h3>
 
-          <p>
-            Home server environment for separating production-style services from test/dev workloads using Proxmox,
-            Linux VMs, Docker services, and Portainer management.
-          </p>
-
-          <div class="tech-list">
-            <span>Proxmox</span>
-            <span>Ubuntu/Debian</span>
-            <span>Docker</span>
-            <span>Portainer</span>
-            <span>Tailscale</span>
+          <div class="case-study-points">
+            <div>
+              <h4>Problem</h4>
+              <p>Separate production-style services from test workloads while practicing virtualization and container operations.</p>
+            </div>
+            <div>
+              <h4>Implementation</h4>
+              <p>Building Linux VMs in Proxmox and managing Docker services through Portainer with remote access through Tailscale.</p>
+            </div>
+            <div>
+              <h4>Tools</h4>
+              <p>Proxmox, Ubuntu/Debian, Docker, Portainer, Tailscale, Linux administration.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Provides a repeatable lab base for self-hosted services, monitoring targets, deployment tests, and future cloud comparisons.</p>
+            </div>
           </div>
 
           <div class="project-links">
             <a href="#" aria-label="Proxmox Portainer repo coming soon">Repo Soon</a>
-            <a href="#case-studies">Case Study</a>
+            <a href="#case-studies">Evidence Notes</a>
           </div>
         </article>
 
         <article class="project-card" data-category="cloud">
+          <div class="project-media" aria-label="Screenshot placeholder for VPS and Domain Deployment Lab">
+            <span>Screenshot: DNS records / deployment notes</span>
+          </div>
           <div class="card-topline">
             <span class="project-status">Planning</span>
             <span>Cloud / DNS</span>
@@ -226,23 +281,54 @@
 
           <h3>VPS + Domain Deployment Lab</h3>
 
-          <p>
-            Planned cloud deployment track for learning VPS hosting, DNS records, static deployments, subdomains,
-            reverse proxy concepts, and external service exposure.
-          </p>
-
-          <div class="tech-list">
-            <span>VPS</span>
-            <span>DNS</span>
-            <span>Cloudflare</span>
-            <span>Linux</span>
-            <span>Domains</span>
+          <div class="case-study-points">
+            <div>
+              <h4>Problem</h4>
+              <p>Practice public hosting, DNS records, and service exposure beyond local-only homelab projects.</p>
+            </div>
+            <div>
+              <h4>Implementation</h4>
+              <p>Planning VPS deployment, domain configuration, subdomains, reverse proxy concepts, and public validation checks.</p>
+            </div>
+            <div>
+              <h4>Tools</h4>
+              <p>VPS, DNS, Cloudflare, Linux, domains, static deployments, reverse proxy concepts.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Documents the full path from domain record to reachable service so cloud and DNS fundamentals are visible.</p>
+            </div>
           </div>
 
           <div class="project-links">
             <a href="#" aria-label="VPS Domain lab repo coming soon">Repo Soon</a>
-            <a href="#case-studies">Case Study</a>
+            <a href="#case-studies">Evidence Notes</a>
           </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section building" id="building">
+      <div class="section-heading">
+        <p class="eyebrow">Currently Building</p>
+        <h2>Active infrastructure work in the lab queue.</h2>
+      </div>
+
+      <div class="build-grid">
+        <article>
+          <span>01</span>
+          <h3>HA DNS validation</h3>
+          <p>Testing Pi-hole failover behavior, recursive DNS resolution, and dashboard evidence for outage scenarios.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Monitoring baseline</h3>
+          <p>Adding Prometheus targets, Grafana panels, and alert notes for DNS, uptime, and self-hosted services.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Self-hosted operations dashboard</h3>
+          <p>Designing the Lab Command Center data model for devices, services, documentation links, and status tracking.</p>
         </article>
       </div>
     </section>
@@ -250,7 +336,7 @@
     <section class="section skills" id="skills">
       <div class="section-heading">
         <p class="eyebrow">Skills</p>
-        <h2>Grouped by the systems I’m working with.</h2>
+        <h2>Grouped by the systems I am working with.</h2>
       </div>
 
       <div class="skills-grid">
@@ -288,29 +374,32 @@
 
     <section class="section case-studies" id="case-studies">
       <div class="section-heading">
-        <p class="eyebrow">Case Studies</p>
-        <h2>Each project gets mapped to problem, implementation, troubleshooting, and outcome.</h2>
+        <p class="eyebrow">Evidence Backlog</p>
+        <h2>What each case study should continue to collect.</h2>
       </div>
 
       <div class="case-study-list">
         <article>
           <h3>Home Network Infrastructure Lab</h3>
           <p>
-            Focus: HA DNS, recursive resolution, monitoring, failover validation, remote access, and segmentation.
+            Add HA DNS failover screenshots, Grafana panels, Prometheus target status, Tailscale access notes,
+            and segmentation diagrams as they are completed.
           </p>
         </article>
 
         <article>
           <h3>CSS DOOM Static Lab</h3>
           <p>
-            Focus: static hosting, GitHub Actions, Vite builds, production asset routing, deployment validation.
+            Keep build notes, GitHub Actions workflow references, deployment validation, and static asset routing
+            troubleshooting visible from the repo.
           </p>
         </article>
 
         <article>
           <h3>Lab Command Center</h3>
           <p>
-            Focus: self-hosted app planning, data modeling, frontend/backend separation, Docker deployment.
+            Add wireframes, data model notes, Docker Compose deployment notes, and screenshots once the first
+            self-hosted version is running.
           </p>
         </article>
       </div>
