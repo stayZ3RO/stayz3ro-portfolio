@@ -1,13 +1,15 @@
 :root {
-  --bg: #050a12;
-  --card: #0b1220;
-  --card-alt: #111827;
-  --accent-blue: #38bdf8;
-  --accent-green: #22c55e;
+  --bg: #070b12;
+  --bg-secondary: #0b1220;
+  --card: #111827;
+  --card-hover: #162033;
+  --accent-blue: #60a5fa;
+  --accent-green: #34d399;
   --text: #e5e7eb;
   --muted: #94a3b8;
-  --border: #1e293b;
-  --focus: #7dd3fc;
+  --border: #243244;
+  --border-muted: #1e293b;
+  --focus: #93c5fd;
 }
 
 * {
@@ -53,8 +55,8 @@ button:focus-visible {
   gap: 1rem;
   padding-top: 0.9rem;
   padding-bottom: 0.9rem;
-  background: rgba(5, 10, 18, 0.94);
-  border-bottom: 1px solid var(--border);
+  background: rgba(7, 11, 18, 0.94);
+  border-bottom: 1px solid var(--border-muted);
   backdrop-filter: blur(12px);
 }
 
@@ -70,9 +72,9 @@ button:focus-visible {
   place-items: center;
   width: 34px;
   height: 34px;
-  border: 1px solid rgba(56, 189, 248, 0.45);
+  border: 1px solid rgba(96, 165, 250, 0.45);
   border-radius: 8px;
-  background: rgba(56, 189, 248, 0.08);
+  background: rgba(96, 165, 250, 0.08);
   color: var(--accent-blue);
   font-size: 0.78rem;
   font-weight: 900;
@@ -119,11 +121,11 @@ button:focus-visible {
   min-height: 48vh;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-muted);
 }
 
 .hero-content {
-  max-width: 820px;
+  max-width: 840px;
 }
 
 .eyebrow {
@@ -167,16 +169,27 @@ h3 {
 
 .hero-summary,
 .section-heading p,
+.about-card p,
 .project-card p,
 .skills-grid p,
-.resume-panel p {
+.resume-card p {
   color: var(--muted);
 }
 
 .hero-summary {
-  max-width: 760px;
+  max-width: 790px;
   margin: 1rem 0 0;
   font-size: 1.08rem;
+}
+
+.hero-summary p,
+.about-card p {
+  margin: 0;
+}
+
+.hero-summary p + p,
+.about-card p + p {
+  margin-top: 0.75rem;
 }
 
 .hero-actions,
@@ -196,7 +209,8 @@ h3 {
 }
 
 .profile-links a,
-.card-actions a {
+.card-actions a,
+.text-link {
   color: var(--accent-blue);
   font-weight: 900;
   text-decoration: none;
@@ -204,7 +218,7 @@ h3 {
 
 .profile-links a:hover,
 .card-actions a:hover {
-  text-decoration: underline;
+  color: var(--accent-green);
 }
 
 .button {
@@ -215,7 +229,7 @@ h3 {
   padding: 0.7rem 1rem;
   border: 1px solid var(--border);
   border-radius: 8px;
-  background: var(--card-alt);
+  background: var(--card);
   color: var(--text);
   font-weight: 900;
   text-decoration: none;
@@ -224,16 +238,35 @@ h3 {
 .button.primary {
   background: var(--accent-blue);
   border-color: var(--accent-blue);
-  color: #04111d;
+  color: #06111f;
 }
 
 .button:hover {
+  background: var(--card-hover);
   border-color: var(--accent-blue);
 }
 
+.button.primary:hover {
+  background: #93c5fd;
+  color: #06111f;
+}
+
 .section-heading {
-  max-width: 760px;
+  max-width: 780px;
   margin-bottom: 1.5rem;
+}
+
+.about-section {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-muted);
+}
+
+.about-card {
+  max-width: 880px;
+  padding: 1.25rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 .project-grid {
@@ -244,7 +277,7 @@ h3 {
 
 .project-card,
 .skills-grid article,
-.resume-panel,
+.resume-card,
 .contact-grid a {
   background: var(--card);
   border: 1px solid var(--border);
@@ -255,6 +288,12 @@ h3 {
   display: grid;
   gap: 1rem;
   padding: 1.15rem;
+}
+
+.project-card:hover,
+.skills-grid article:hover,
+.contact-grid a:hover {
+  background: var(--card-hover);
 }
 
 .project-meta {
@@ -294,41 +333,56 @@ h3 {
 
 .tool-list span {
   padding: 0.28rem 0.5rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-muted);
   border-radius: 999px;
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 800;
 }
 
-.skills-grid,
-.contact-grid {
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
-.skills-grid article,
-.contact-grid a {
+.skills-grid article {
   padding: 1rem;
 }
 
 .resume-contact {
   display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   gap: 1rem;
+  align-items: stretch;
 }
 
-.resume-panel {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
+.resume-card,
+.contact-block {
+  min-width: 0;
+}
+
+.resume-card {
+  display: grid;
+  align-content: start;
+  gap: 0.85rem;
   padding: 1.25rem;
+}
+
+.resume-card .button {
+  justify-self: start;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .contact-grid a {
   display: grid;
   gap: 0.35rem;
+  padding: 1rem;
   text-decoration: none;
 }
 
@@ -345,12 +399,8 @@ h3 {
 .site-footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-muted);
   color: var(--muted);
-}
-
-.is-hidden {
-  display: none;
 }
 
 @media (max-width: 920px) {
@@ -364,8 +414,13 @@ h3 {
 
   .project-grid,
   .skills-grid,
+  .resume-contact,
   .contact-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .resume-card {
+    grid-column: 1 / -1;
   }
 }
 
@@ -398,16 +453,16 @@ h3 {
 
   .project-grid,
   .skills-grid,
+  .resume-contact,
   .contact-grid {
     grid-template-columns: 1fr;
   }
 
-  .resume-panel {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
   .button {
     width: 100%;
+  }
+
+  .resume-card .button {
+    justify-self: stretch;
   }
 }
