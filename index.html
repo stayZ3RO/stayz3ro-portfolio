@@ -8,7 +8,7 @@
     name="description"
     content="Christopher Austin Lorenzo is an IT Service Desk Analyst II building practical infrastructure projects across networking, DNS, monitoring, Docker, Proxmox, and cloud/static deployments."
   />
-  <link rel="stylesheet" href="src/styles.css?v=20260429-5" />
+  <link rel="stylesheet" href="src/styles.css?v=20260502-2" />
 </head>
 <body>
   <header class="site-header">
@@ -34,55 +34,83 @@
         <p class="eyebrow">IT Support | Infrastructure Projects | Cloud & Networking</p>
         <h1 id="hero-title">Christopher Austin Lorenzo</h1>
         <p class="role-line">IT Service Desk Analyst II | Aspiring Cloud &amp; Network Engineer</p>
-        <p class="hero-summary">
-          I build and document practical infrastructure projects across networking, DNS, monitoring,
-          Docker, Proxmox, and cloud/static deployments.
-        </p>
+        <div class="hero-summary">
+          <p>
+            I'm an IT Service Desk Analyst II building toward cloud and network engineering
+            through hands-on infrastructure projects.
+          </p>
+          <p>
+            My work combines enterprise IT support experience with practical labs covering DNS,
+            monitoring, Docker, Proxmox, remote access, and cloud/static deployments.
+          </p>
+        </div>
 
         <div class="hero-actions" aria-label="Primary actions">
           <a class="button primary" href="#projects">View Projects</a>
-          <a class="button" href="assets/resume/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+          <!-- TODO: Add the public resume PDF at resume.pdf before sharing the portfolio broadly. -->
+          <a class="button" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
         </div>
 
         <div class="profile-links" aria-label="Profile links">
           <a href="https://github.com/stayZ3RO" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/christopher-l-2118351ab/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="mailto:stayz3ro@gmail.com">Email</a>
+          <a href="REPLACE_WITH_MY_LINKEDIN_URL" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:REPLACE_WITH_MY_REAL_EMAIL">Email</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section about-section" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2 id="about-title">Support experience turned into infrastructure practice.</h2>
+      </div>
+
+      <div class="about-card">
+        <p>
+          I work in IT support and use my homelab to build deeper experience in networking,
+          infrastructure, cloud hosting, and self-hosted systems.
+        </p>
+        <p>
+          My projects focus on real operational skills: troubleshooting, documentation,
+          DNS control, monitoring, service availability, remote access, and deployment workflows.
+        </p>
+        <p>
+          This portfolio is a public record of what I've built, what I've documented, and how
+          I'm growing from service desk support into cloud and network engineering.
+        </p>
       </div>
     </section>
 
     <section class="section" id="projects" aria-labelledby="projects-title">
       <div class="section-heading">
         <p class="eyebrow">Featured Projects</p>
-        <h2 id="projects-title">Practical projects that show the direction of my work.</h2>
+        <h2 id="projects-title">Projects that show how I build, troubleshoot, and document infrastructure.</h2>
       </div>
 
       <div class="project-grid">
         <article class="project-card">
           <div class="project-meta">
-            <span class="status Active Lab">Active Lab</span>
+            <span class="status building">Building</span>
             <span>Networking / Homelab</span>
           </div>
-          <h3>
-  <a class="project-title-link" href="https://github.com/stayZ3RO/home-network-infrastructure-HA-DNS" target="_blank" rel="noreferrer">
-    Home Network Infrastructure Lab
-  </a>
-</h3>
-</h3>
+          <h3>Home Network Infrastructure Lab</h3>
           <p>
-            A phased homelab project for DNS visibility, HA Pi-hole, recursive DNS,
-            monitoring, alerting, and remote access.
+            Phased homelab project covering DNS control, Pi-hole high availability,
+            Unbound recursive DNS, monitoring, alerting, and Tailscale remote access.
           </p>
-          <div class="tool-list">
+          <div class="tool-list" aria-label="Tools used">
             <span>Pi-hole</span>
             <span>Keepalived</span>
+            <span>Gravity Sync</span>
             <span>Unbound</span>
+            <span>Prometheus</span>
             <span>Grafana</span>
+            <span>Alertmanager</span>
             <span>Tailscale</span>
           </div>
           <div class="card-actions">
-            <a href="https://github.com/stayZ3RO/home-network-infrastructure-HA-DNS" target="_blank" rel="noreferrer">Repo</a>
+            <a href="https://github.com/stayZ3RO/home-network-infrastructure-HA-DNS" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a href="https://github.com/stayZ3RO/home-network-infrastructure-HA-DNS" target="_blank" rel="noreferrer">Case Study</a>
           </div>
         </article>
 
@@ -91,25 +119,22 @@
             <span class="status live">Live</span>
             <span>Static Hosting / Deployment</span>
           </div>
-          <h3>
-  <a class="project-title-link" href="https://stayz3ro.github.io/css-doom-static-lab/" target="_blank" rel="noreferrer">
-    CSS DOOM Static Lab
-  </a>
-</h3>
-</h3>
+          <h3>CSS DOOM Static Lab</h3>
           <p>
-            A Vite-based browser project deployed through GitHub Actions and GitHub Pages,
-            focused on build troubleshooting and static asset routing.
+            Static browser game deployment using GitHub Pages with Vite build
+            troubleshooting, asset path fixes, and production validation.
           </p>
-          <div class="tool-list">
+          <div class="tool-list" aria-label="Tools used">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Vite</span>
             <span>GitHub Pages</span>
             <span>GitHub Actions</span>
-            <span>Vite</span>
-            <span>JavaScript</span>
           </div>
           <div class="card-actions">
             <a href="https://stayz3ro.github.io/css-doom-static-lab/" target="_blank" rel="noreferrer">Live Demo</a>
-            <a href="https://github.com/stayZ3RO/css-doom-static-lab" target="_blank" rel="noreferrer">Repo</a>
+            <a href="https://github.com/stayZ3RO/css-doom-static-lab" target="_blank" rel="noreferrer">GitHub Repo</a>
           </div>
         </article>
 
@@ -120,18 +145,18 @@
           </div>
           <h3>Lab Command Center</h3>
           <p>
-            A planned self-hosted dashboard for tracking homelab devices, services,
-            network notes, documentation links, and project assets.
+            Self-hosted dashboard concept for tracking homelab devices, networks,
+            services, documentation links, and service status.
           </p>
-          <div class="tool-list">
+          <div class="tool-list" aria-label="Tools planned">
+            <span>Next.js</span>
             <span>FastAPI</span>
             <span>SQLite</span>
             <span>Docker Compose</span>
             <span>Portainer</span>
-            <span>Proxmox</span>
           </div>
           <div class="card-actions">
-            <a href="#contact">Repo Soon</a>
+            <span class="text-link">GitHub Repo Coming Soon</span>
           </div>
         </article>
       </div>
@@ -140,51 +165,68 @@
     <section class="section" id="skills" aria-labelledby="skills-title">
       <div class="section-heading">
         <p class="eyebrow">Skills Snapshot</p>
-        <h2 id="skills-title">Support experience backed by infrastructure practice.</h2>
+        <h2 id="skills-title">Current support experience, project practice, and active buildouts.</h2>
+        <p>
+          Skills shown here reflect a mix of current IT support experience,
+          documented homelab projects, and active infrastructure buildouts.
+        </p>
       </div>
 
       <div class="skills-grid">
         <article>
-          <h3>Networking</h3>
-          <p>DNS, DHCP, VLANs, routing concepts, firewall concepts, VPN/Tailscale, IP planning</p>
+          <h3>Enterprise IT Support</h3>
+          <p>Windows/macOS, Microsoft 365, Exchange Online, Azure Entra ID, Intune, VPN/MFA/SSO troubleshooting, Jira/JSM, endpoint support, onboarding/offboarding, SLA-based ticket handling.</p>
         </article>
         <article>
-          <h3>Cloud / Hosting</h3>
-          <p>GitHub Pages, GitHub Actions, Cloudflare planning, DNS records, static deployments</p>
+          <h3>Networking &amp; DNS</h3>
+          <p>DNS, DHCP, static IP planning, LAN troubleshooting, router/gateway configuration, firewall concepts, VLAN concepts, Tailscale, Pi-hole, Unbound, high-availability DNS.</p>
         </article>
         <article>
-          <h3>Systems / Homelab</h3>
-          <p>Linux, Proxmox, Docker, Portainer, Raspberry Pi, Windows, WSL Ubuntu</p>
+          <h3>Systems &amp; Self-Hosting</h3>
+          <p>Linux, Raspberry Pi, Proxmox, Docker, Docker Compose, Portainer, WSL/Ubuntu, GitHub, GitHub Pages, self-hosted services.</p>
         </article>
         <article>
-          <h3>Enterprise IT</h3>
-          <p>Microsoft 365, Entra ID, Exchange Online, Intune concepts, Jira/JSM, remote support</p>
+          <h3>Monitoring &amp; Observability</h3>
+          <p>Prometheus, Grafana, Alertmanager, Blackbox Exporter, service health checks, DNS monitoring, dashboard building, alert testing, failover validation.</p>
+        </article>
+        <article>
+          <h3>Cloud / Deployment</h3>
+          <p>GitHub Pages, GitHub Actions, DNS records, static site hosting, Cloudflare Pages planning, VPS deployment planning, environment configuration.</p>
+        </article>
+        <article>
+          <h3>Documentation &amp; Troubleshooting</h3>
+          <p>Technical documentation, README writing, runbooks, architecture diagrams, screenshot-based validation, root cause analysis, change documentation, project case studies.</p>
         </article>
       </div>
     </section>
 
     <section class="section resume-contact" id="resume" aria-labelledby="resume-title">
-      <div class="resume-panel">
-        <div>
-          <p class="eyebrow">Resume + Contact</p>
-          <h2 id="resume-title">Want the quick version?</h2>
-          <p>Download my resume, review my GitHub projects, or connect on LinkedIn.</p>
-        </div>
-        <a class="button primary" href="assets/resume/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-      </div>
+      <article class="resume-card">
+        <p class="eyebrow">Resume</p>
+        <h2 id="resume-title">Download my current public resume.</h2>
+        <p>
+          Download my current public resume focused on IT support, infrastructure,
+          networking, cloud fundamentals, and hands-on homelab projects.
+        </p>
+        <a class="button primary" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+      </article>
 
-      <div class="contact-grid" id="contact" aria-label="Contact links">
-        <a href="https://github.com/stayZ3RO" target="_blank" rel="noreferrer">
-          <span>GitHub</span>
-          <strong>github.com/stayZ3RO</strong>
-        </a>
-        <a href="https://www.linkedin.com/in/christopher-l-2118351ab/" target="_blank" rel="noreferrer">
-          <span>LinkedIn</span>
-          <strong>christopher-l-2118351ab</strong>
-        </a>
-        <a href="mailto:stayz3ro@gmail.com" aria-label="Email Christopher Austin Lorenzo">
-          <span>Email</span>
-          <strong>stayz3ro@gmail.com</strong>
+      <div class="contact-block" id="contact">
+        <p class="eyebrow">Contact</p>
+        <div class="contact-grid" aria-label="Contact links">
+          <a href="mailto:REPLACE_WITH_MY_REAL_EMAIL">
+            <span>Email</span>
+            <strong>REPLACE_WITH_MY_REAL_EMAIL</strong>
+          </a>
+          <a href="https://github.com/stayZ3RO" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            <strong>github.com/stayZ3RO</strong>
+          </a>
+          <a href="REPLACE_WITH_MY_LINKEDIN_URL" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            <strong>REPLACE_WITH_MY_LINKEDIN_URL</strong>
+          </a>
+        </div>
       </div>
     </section>
   </main>
