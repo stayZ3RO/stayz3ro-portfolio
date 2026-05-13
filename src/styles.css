@@ -1536,3 +1536,117 @@ body {
   color: #22d3ee;
 }
 
+
+/* =========================================================
+   Public site fix: project card width, spacing, and meta layout
+   ========================================================= */
+
+/* Let the featured projects section use more horizontal space */
+#projects {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Give cards real room instead of squeezing them */
+#projects .project-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1.4rem !important;
+  align-items: stretch !important;
+}
+
+/* Make the card top area clean instead of cramped */
+#projects .project-card {
+  min-width: 0 !important;
+  padding: 1.35rem !important;
+  border-radius: 1.25rem !important;
+}
+
+/* Stack status/category instead of forcing them into a cramped row */
+#projects .project-meta {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 0.65rem !important;
+  min-height: auto !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Category text should not squeeze or float right */
+#projects .project-meta span:not(.status) {
+  max-width: none !important;
+  width: auto !important;
+  text-align: left !important;
+  color: rgba(191, 219, 254, 0.78) !important;
+  font-size: 0.72rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.08em !important;
+  line-height: 1.35 !important;
+  text-transform: uppercase !important;
+}
+
+/* Keep status pills compact */
+#projects .status {
+  width: fit-content !important;
+  white-space: nowrap !important;
+}
+
+/* Project titles should be readable, not crushed */
+#projects .project-card h3 {
+  max-width: none !important;
+  margin: 0 0 1rem !important;
+  font-size: clamp(1.22rem, 1.35vw, 1.45rem) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.04em !important;
+}
+
+#projects .project-title-link {
+  display: inline !important;
+  color: #f8fbff !important;
+  text-decoration: none !important;
+  background: none !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  hyphens: none !important;
+}
+
+#projects .project-title-link:hover {
+  color: var(--accent-cyan) !important;
+}
+
+/* Summary text gets more room */
+#projects .project-card > p {
+  font-size: 0.95rem !important;
+  line-height: 1.7 !important;
+}
+
+/* Operational Proof block should not look cramped */
+#projects .proof-strip {
+  margin: 1.1rem 0 !important;
+}
+
+/* Tool chips can wrap naturally */
+#projects .tool-list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.45rem !important;
+}
+
+/* Responsive behavior */
+@media (max-width: 1120px) {
+  #projects .project-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1320px) {
+  #projects .project-grid {
+    grid-template-columns: repeat(3, minmax(300px, 1fr)) !important;
+  }
+}
+
