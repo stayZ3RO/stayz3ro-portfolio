@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christopher Austin Lorenzo | IT Support, Cloud & Networking Portfolio</title>
   <meta
     name="description"
-    content="Christopher Austin Lorenzo is an IT Service Desk Analyst II building practical infrastructure projects across networking, DNS, monitoring, Docker, Proxmox, and cloud/static deployments."
+    content="Christopher Austin Lorenzo is an IT Service Desk Analyst II building toward cloud and network engineering through documented infrastructure labs covering DNS, monitoring, managed networking, Proxmox, Linux VPS hosting, remote access, and cloud/static deployments."
   />
-  <link rel="stylesheet" href="src/styles.css?v=20260502-2" />
+  <title>Christopher Austin Lorenzo | IT Support, Cloud & Networking Portfolio</title>
+  <link rel="stylesheet" href="src/styles.css?v=20260512-1" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Christopher Austin Lorenzo portfolio home">
+    <a class="brand" href="#top" aria-label="Christopher Austin Lorenzo home">
       <span class="brand-mark">Z3</span>
       <span>
         <strong>Christopher Austin Lorenzo</strong>
@@ -20,7 +20,7 @@
       </span>
     </a>
 
-    <nav class="site-nav" aria-label="Main navigation">
+    <nav class="site-nav" aria-label="Primary navigation">
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#resume">Resume</a>
@@ -29,26 +29,28 @@
   </header>
 
   <main id="top">
-    <section class="hero section" aria-labelledby="hero-title">
+    <section class="section hero" aria-labelledby="hero-title">
       <div class="hero-content">
-        <p class="eyebrow">IT Support | Infrastructure Projects | Cloud & Networking</p>
+        <p class="eyebrow">IT Support | Infrastructure Projects | Cloud &amp; Networking</p>
         <h1 id="hero-title">Christopher Austin Lorenzo</h1>
         <p class="role-line">IT Service Desk Analyst II | Aspiring Cloud &amp; Network Engineer</p>
+
         <div class="hero-summary">
           <p>
-            I'm an IT Service Desk Analyst II building toward cloud and network engineering
+            I’m an IT Service Desk Analyst II building toward cloud and network engineering
             through hands-on infrastructure projects.
           </p>
+
           <p>
             My work combines enterprise IT support experience with practical labs covering DNS,
-            monitoring, Docker, Proxmox, remote access, and cloud/static deployments.
+            monitoring, managed networking, Proxmox, Linux VPS hosting, remote access, and
+            cloud/static deployments.
           </p>
         </div>
 
-        <div class="hero-actions" aria-label="Primary actions">
+        <div class="hero-actions">
           <a class="button primary" href="#projects">View Projects</a>
-          <!-- TODO: Add the public resume PDF at resume.pdf before sharing the portfolio broadly. -->
-          <a class="button" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+          <a class="button" href="resume.pdf" download>Download Resume</a>
         </div>
 
         <div class="profile-links" aria-label="Profile links">
@@ -67,16 +69,19 @@
 
       <div class="about-card">
         <p>
-          I work in IT support and use my homelab to build deeper experience in networking,
-          infrastructure, cloud hosting, and self-hosted systems.
+          I work in IT support and use my homelab and cloud labs to build deeper experience
+          in networking, infrastructure, cloud hosting, and self-hosted systems.
         </p>
+
         <p>
           My projects focus on real operational skills: troubleshooting, documentation,
-          DNS control, monitoring, service availability, remote access, and deployment workflows.
+          DNS control, monitoring, service availability, remote access, managed network design,
+          and deployment workflows.
         </p>
+
         <p>
-          This portfolio is a public record of what I've built, what I've documented, and how
-          I'm growing from service desk support into cloud and network engineering.
+          This portfolio is a public record of what I’ve built, what I’ve documented, and how
+          I’m growing from service desk support into cloud and network engineering.
         </p>
       </div>
     </section>
@@ -90,14 +95,23 @@
       <div class="project-grid">
         <article class="project-card">
           <div class="project-meta">
+            <span class="status live">Documented Lab</span>
+            <span>DNS / Monitoring / Core Services</span>
             <span class="status building">Active Lab</span>
             <span>Networking / Homelab</span>
           </div>
-          <h3>Home Network Infrastructure Lab</h3>
+
+          <h3>
+            <a class="project-title-link" href="https://github.com/stayZ3RO/home-network-infrastructure-HA-DNS" target="_blank" rel="noreferrer">
+              Home Network Infrastructure Lab — HA DNS &amp; Core Services
+            </a>
+          </h3>
+
           <p>
-            Phased homelab project covering DNS control, Pi-hole high availability,
-            Unbound recursive DNS, monitoring, alerting, and Tailscale remote access.
+            Completed infrastructure lab focused on high-availability DNS, recursive DNS resolution,
+            monitoring, alerting, remote administration, and Proxmox-hosted infrastructure services.
           </p>
+
           <div class="tool-list" aria-label="Tools used">
             <span>Pi-hole</span>
             <span>Keepalived</span>
@@ -107,7 +121,33 @@
             <span>Grafana</span>
             <span>Alertmanager</span>
             <span>Tailscale</span>
+            <span>Proxmox</span>
+            <span>Raspberry Pi</span>
+            <span>Docker</span>
           </div>
+
+          <div class="project-details">
+            <div class="project-detail">
+              <strong>Problem</strong>
+              <p>I wanted more control and visibility over home DNS, monitoring, service availability, and remote infrastructure access instead of relying only on consumer router defaults.</p>
+            </div>
+
+            <div class="project-detail">
+              <strong>Implementation</strong>
+              <p>Built a phased home infrastructure lab with Pi-hole DNS, HA failover using Keepalived, Gravity Sync replication, Unbound recursive DNS, Prometheus/Grafana monitoring, Alertmanager notifications, Tailscale remote access, and Proxmox-hosted infrastructure services.</p>
+            </div>
+
+            <div class="project-detail">
+              <strong>Troubleshooting</strong>
+              <p>Validated DNS behavior, failover between Pi-hole nodes, recursive DNS resolution, monitoring targets, alert testing, service availability, and remote management access.</p>
+            </div>
+
+            <div class="project-detail">
+              <strong>Outcome</strong>
+              <p>Created a documented infrastructure foundation that demonstrates DNS control, service monitoring, high availability concepts, remote access, and operational validation.</p>
+            </div>
+          </div>
+
           <div class="card-actions">
             <a href="https://github.com/stayZ3RO/home-network-infrastructure-HA-DNS" target="_blank" rel="noreferrer">GitHub Repo</a>
           </div>
@@ -115,50 +155,128 @@
 
         <article class="project-card">
           <div class="project-meta">
-            <span class="status live">Live</span>
-            <span>Static Hosting / Deployment</span>
+            <span class="status building">Active Lab</span>
+            <span>Managed Network / Routing / Switching</span>
           </div>
-          <h3>CSS DOOM Static Lab</h3>
+
+          <h3>
+            <a class="project-title-link" href="https://github.com/stayZ3RO/home-network-managed-infrastructure-lab" target="_blank" rel="noreferrer">
+              Managed Network Infrastructure Lab — Router, Switching &amp; Segmentation
+            </a>
+          </h3>
+
           <p>
-            Static browser game deployment using GitHub Pages with Vite build
-            troubleshooting, asset path fixes, and production validation.
+            Infrastructure modernization lab focused on moving from a consumer network design to a managed
+            router/switch environment with cleaner topology, network segmentation planning, and standardized
+            infrastructure documentation.
           </p>
+
           <div class="tool-list" aria-label="Tools used">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Vite</span>
-            <span>GitHub Pages</span>
-            <span>GitHub Actions</span>
+            <span>TP-Link ER605</span>
+            <span>Omada Controller</span>
+            <span>TL-SG2210P</span>
+            <span>Deco AP mode</span>
+            <span>Proxmox</span>
+            <span>VLAN planning</span>
+            <span>DHCP</span>
+            <span>DNS</span>
+            <span>Topology diagrams</span>
           </div>
+
+          <div class="project-details">
+            <div class="project-detail">
+              <strong>Problem</strong>
+              <p>My original home network had limitations around control, segmentation, visibility, and documentation. I wanted a more enterprise-style lab that better reflected managed routing, switching, and network operations.</p>
+            </div>
+
+            <div class="project-detail">
+              <strong>Implementation</strong>
+              <p>Performed a managed network cutover using an Omada-managed router and switch, updated the physical and logical topology, migrated network control from consumer-style routing toward managed infrastructure, and documented validation steps after cutover.</p>
+            </div>
+
+            <div class="project-detail">
+              <strong>Troubleshooting</strong>
+              <p>Validated internet access, DNS behavior, client connectivity, AP mode behavior, router/switch management, DHCP behavior, and service reachability after the cutover.</p>
+            </div>
+
+            <div class="project-detail">
+              <strong>Outcome</strong>
+              <p>Built a stronger foundation for VLAN segmentation, managed switching, network documentation, and future enterprise-style routing/switching practice.</p>
+            </div>
+          </div>
+
           <div class="card-actions">
-            <a href="https://stayz3ro.github.io/css-doom-static-lab/" target="_blank" rel="noreferrer">Live Demo</a>
-            <a href="https://github.com/stayZ3RO/css-doom-static-lab" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a href="https://github.com/stayZ3RO/home-network-managed-infrastructure-lab" target="_blank" rel="noreferrer">GitHub Repo</a>
           </div>
         </article>
 
         <article class="project-card">
           <div class="project-meta">
-            <span class="status planning">Planning</span>
-            <span>Self-Hosted App</span>
+            <span class="status planning">In Progress</span>
+            <span>Cloud / VPS / Public Services</span>
           </div>
-          <h3>Lab Command Center</h3>
+
+          <h3>
+            <a class="project-title-link" href="https://github.com/stayZ3RO/vps-cloud-infra-lab" target="_blank" rel="noreferrer">
+              VPS Cloud Infrastructure Lab — Linux, DNS &amp; Public Routing
+            </a>
+          </h3>
+
           <p>
-            Self-hosted dashboard concept for tracking homelab devices, networks,
-            services, documentation links, and service status.
+            Cloud infrastructure lab focused on Linux VPS administration, domain/DNS management, HTTPS routing,
+            Dockerized services, monitoring, backups, and public-facing infrastructure operations.
           </p>
-          <div class="tool-list" aria-label="Tools planned">
-            <span>Next.js</span>
-            <span>FastAPI</span>
-            <span>SQLite</span>
+
+          <div class="tool-list" aria-label="Tools used and planned">
+            <span>Linux VPS</span>
+            <span>Docker</span>
             <span>Docker Compose</span>
-            <span>Portainer</span>
+            <span>DNS records</span>
+            <span>Reverse proxy planning</span>
+            <span>HTTPS</span>
+            <span>Cloudflare planning</span>
+            <span>Netcup VPS</span>
+            <span>RackNerd VPS</span>
+            <span>Monitoring</span>
+            <span>Backups</span>
           </div>
+
+          <div class="project-details">
+            <div class="project-detail">
+              <strong>Problem</strong>
+              <p>I wanted a cloud-facing lab that extends my homelab experience into public infrastructure, domain management, Linux server administration, and self-hosted application deployment.</p>
+            </div>
+
+            <div class="project-detail">
+              <strong>Implementation</strong>
+              <p>Building a VPS-based infrastructure environment using Linux servers, Dockerized services, domain/DNS configuration, reverse proxy and HTTPS planning, monitoring, and backup workflows.</p>
+            </div>
+
+            <div class="project-detail">
+              <strong>Troubleshooting</strong>
+              <p>Will validate DNS records, service reachability, firewall rules, HTTPS routing, container health, remote access, uptime monitoring, and backup/restore workflows.</p>
+            </div>
+
+            <div class="project-detail">
+              <strong>Outcome</strong>
+              <p>Creates a cloud infrastructure learning path that connects homelab operations with Linux server administration, public DNS, hosting, and future self-hosted applications.</p>
+            </div>
+          </div>
+
           <div class="card-actions">
+
+            <a href="https://github.com/stayZ3RO/vps-cloud-infra-lab" target="_blank" rel="noreferrer">GitHub Repo</a>
             <span class="text-link">Coming Soon</span>
           </div>
         </article>
       </div>
+
+      <!--
+        Parked for a future optional Other Projects / Experiments section.
+        These are intentionally not shown as main recruiter-facing featured projects.
+        - CSS DOOM Static Lab — Live demo: https://stayz3ro.github.io/css-doom-static-lab/ — Repo: https://github.com/stayZ3RO/css-doom-static-lab
+        - Lab Command Center — Self-hosted dashboard concept; no public repo link added here.
+      -->
     </section>
 
     <section class="section" id="skills" aria-labelledby="skills-title">
@@ -167,31 +285,41 @@
         <h2 id="skills-title">Current support experience, project practice, and active buildouts.</h2>
         <p>
           Skills shown here reflect a mix of current IT support experience,
-          documented homelab projects, and active infrastructure buildouts.
+          documented homelab projects, managed network work, and active cloud infrastructure buildouts.
         </p>
       </div>
 
       <div class="skills-grid">
         <article>
           <h3>Enterprise IT Support</h3>
-          <p>Windows/macOS, Microsoft 365, Exchange Online, Azure Entra ID, Intune, VPN/MFA/SSO troubleshooting, Jira/JSM, endpoint support, onboarding/offboarding, SLA-based ticket handling.</p>
+          <p>Windows/macOS, Microsoft 365, Exchange Online, Azure Entra ID, Intune concepts, VPN/MFA/SSO troubleshooting, Jira/JSM, endpoint support, onboarding/offboarding, SLA-based ticket handling.</p>
         </article>
+
         <article>
           <h3>Networking &amp; DNS</h3>
           <p>DNS, DHCP, static IP planning, LAN troubleshooting, router/gateway configuration, firewall concepts, VLAN concepts, Tailscale, Pi-hole, Unbound, high-availability DNS.</p>
         </article>
+
+        <article>
+          <h3>Managed Infrastructure</h3>
+          <p>TP-Link ER605, Omada Controller, managed switching, AP mode, network topology documentation, cutover validation, segmentation planning.</p>
+        </article>
+
         <article>
           <h3>Systems &amp; Self-Hosting</h3>
-          <p>Linux, Raspberry Pi, Proxmox, Docker, Docker Compose, Portainer, WSL/Ubuntu, GitHub, GitHub Pages, self-hosted services.</p>
+          <p>Linux, Raspberry Pi, Proxmox, Docker, Docker Compose, Portainer, WSL Ubuntu, GitHub, GitHub Pages, self-hosted services.</p>
         </article>
+
         <article>
           <h3>Monitoring &amp; Observability</h3>
           <p>Prometheus, Grafana, Alertmanager, Blackbox Exporter, service health checks, DNS monitoring, dashboard building, alert testing, failover validation.</p>
         </article>
+
         <article>
-          <h3>Cloud / Deployment</h3>
-          <p>GitHub Pages, GitHub Actions, DNS records, static site hosting, Cloudflare Pages planning, VPS deployment planning, environment configuration.</p>
+          <h3>Cloud / VPS / Deployment</h3>
+          <p>Linux VPS, DNS records, static site hosting, GitHub Pages, GitHub Actions, reverse proxy planning, HTTPS planning, Cloudflare planning, backups, public service hosting.</p>
         </article>
+
         <article>
           <h3>Documentation &amp; Troubleshooting</h3>
           <p>Technical documentation, README writing, runbooks, architecture diagrams, screenshot-based validation, root cause analysis, change documentation, project case studies.</p>
@@ -200,30 +328,36 @@
     </section>
 
     <section class="section resume-contact" id="resume" aria-labelledby="resume-title">
-      <article class="resume-card">
+      <div class="resume-card">
         <p class="eyebrow">Resume</p>
         <h2 id="resume-title">Download my current public resume.</h2>
         <p>
           Download my current public resume focused on IT support, infrastructure,
           networking, cloud fundamentals, and hands-on homelab projects.
         </p>
-        <a class="button primary" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-      </article>
+        <a class="button primary" href="resume.pdf" download>Download Resume</a>
+      </div>
 
-      <div class="contact-block" id="contact">
-        <p class="eyebrow">Contact</p>
-        <div class="contact-grid" aria-label="Contact links">
+      <div class="contact-block" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s connect.</h2>
+        </div>
+
+        <div class="contact-grid">
           <a href="mailto:stayz3ro@gmail.com">
-            <span>Email</span>
-            <strong>stayz3ro@gmail.com</strong>
+            <strong>Email</strong>
+            <span>stayz3ro@gmail.com</span>
           </a>
+
           <a href="https://github.com/stayZ3RO" target="_blank" rel="noreferrer">
-            <span>GitHub</span>
-            <strong>github.com/stayZ3RO</strong>
+            <strong>GitHub</strong>
+            <span>github.com/stayZ3RO</span>
           </a>
+
           <a href="https://www.linkedin.com/in/christopher-l-2118351ab/" target="_blank" rel="noreferrer">
-            <span>LinkedIn</span>
-            <strong>christopher-l-2118351ab</strong>
+            <strong>LinkedIn</strong>
+            <span>christopher-l-2118351ab</span>
           </a>
         </div>
       </div>
@@ -233,7 +367,5 @@
   <footer class="site-footer">
     <p>Built with HTML, CSS, JavaScript, GitHub, and GitHub Pages.</p>
   </footer>
-
-  <script src="src/main.js"></script>
 </body>
 </html>
