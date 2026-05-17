@@ -136,6 +136,29 @@
       </div>
     </section>
 
+    <section className="current-focus">
+  <p className="section-label">Current Focus</p>
+  <h2>Building from support into infrastructure.</h2>
+
+  <div className="focus-card">
+    <p>
+      Finalizing my home infrastructure lab with Tailscale subnet routing,
+      HA DNS, monitoring, and Proxmox-hosted services.
+    </p>
+
+    <p>
+      Next, I’m continuing my managed network lab by moving from a validated
+      flat network toward segmented routing with subnetting, VLAN planning,
+      firewall policy, pilot VLAN testing, and controlled renumbering.
+    </p>
+
+    <p>
+      On the side, I’m building a private PowerShell service desk toolkit for
+      diagnostics, reporting, and future repair/remediation workflows.
+    </p>
+  </div>
+</section>
+
     <section class="section" id="projects" aria-labelledby="projects-title">
       <div class="section-heading">
         <p class="eyebrow">Featured Projects</p>
@@ -145,7 +168,7 @@
       <div class="project-grid">
         <article class="project-card">
           <div class="project-meta">
-            <span class="status live">Documented Lab</span>
+            <span class="status live">Mature / Finalizing</span>
             <span>DNS / Monitoring / Core Services</span>
           </div>
 
@@ -156,8 +179,10 @@
           </h3>
 
           <p>
-            Completed infrastructure lab focused on high-availability DNS, recursive DNS resolution,
-            monitoring, alerting, remote administration, and Proxmox-hosted infrastructure services.
+            Built a self-hosted infrastructure lab focused on high-availability DNS, recursive DNS,
+            monitoring, alerting, remote access, and Proxmox-hosted services. The project documents
+            Pi-hole HA DNS, Keepalived VIP failover, Gravity Sync, Unbound, Prometheus, Grafana,
+            Alertmanager, Tailscale, RustDesk, backups, and operational validation.
           </p>
 
           <div class="proof-strip" aria-label="Project proof points">
@@ -209,7 +234,7 @@
 
         <article class="project-card">
           <div class="project-meta">
-            <span class="status building">Active Lab</span>
+            <span class="status building">Active / Phase 1 Complete</span>
             <span>Managed Network / Routing / Switching</span>
           </div>
 
@@ -220,9 +245,10 @@
           </h3>
 
           <p>
-            Infrastructure modernization lab focused on moving from a consumer network design to a managed
-            router/switch environment with cleaner topology, network segmentation planning, and standardized
-            infrastructure documentation.
+          Migrated the network core from a flat consumer-style setup to managed infrastructure using a
+          TP-Link ER605 router/firewall, Omada-managed switch, and Omada Controller. Current work
+          focuses on IP addressing fundamentals, subnet planning, VLAN-backed segmentation, firewall 
+          policy, and controlled renumbering.
           </p>
 
           <div class="proof-strip" aria-label="Project proof points">
@@ -283,8 +309,8 @@
           </h3>
 
           <p>
-            Cloud infrastructure lab focused on Linux VPS administration, domain/DNS management, HTTPS routing,
-            Dockerized services, monitoring, backups, and public-facing infrastructure operations.
+            Building a VPS-based cloud infrastructure lab to practice Linux administration, Docker Compose,
+            reverse proxying, HTTPS, secure remote access, monitoring, backups, and public-facing application hosting.
           </p>
 
           <div class="proof-strip" aria-label="Project proof points">
