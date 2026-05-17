@@ -1,46 +1,59 @@
 # stayZ3RO Portfolio
 
-Static personal portfolio website showcasing IT, networking, cloud, homelab, and self-hosted projects.
+Personal technical portfolio for IT support, networking, cloud infrastructure, homelab, and self-hosted projects.
 
 ## Overview
 
-This portfolio is designed as a recruiter-facing project hub. It links technical projects, GitHub repositories, live demos, resume content, and case studies in one place.
+This portfolio is a recruiter-facing project hub. It highlights documented infrastructure labs, project status, core skills, contact links, and a downloadable resume.
 
 ## Focus Areas
 
 - IT support and troubleshooting
 - Home network infrastructure
 - DNS, DHCP, VLANs, routing, and remote access
-- Static web hosting and GitHub Pages
-- GitHub Actions deployment troubleshooting
-- Proxmox, Docker, Portainer, and self-hosted services
+- Proxmox, Docker, Linux VPS hosting, and self-hosted services
+- Monitoring, alerting, and operational validation
 - Documentation and project case studies
 
 ## Tech Stack
 
-- HTML
-- CSS
-- JavaScript
-- Git
-- GitHub
-- GitHub Pages
+- Vite
+- React
+- Plain CSS
+- GitHub Pages static hosting
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Production Build
+
+```bash
+npm run build
+npm run preview
+```
+
+The Vite base path is configured for GitHub Pages project hosting at `/stayz3ro-portfolio/`.
 
 ## Repo Structure
 
 ```text
 stayz3ro-portfolio/
-├── README.md
-├── index.html
-├── .nojekyll
-├── src/
-│   ├── styles.css
-│   └── main.js
-├── assets/
-│   ├── resume/
-│   ├── screenshots/
-│   └── project-thumbnails/
-└── docs/
-    ├── content-plan.md
-    ├── deployment-notes.md
-    ├── project-case-studies.md
-    └── screenshots-checklist.md
+|-- index.html
+|-- package.json
+|-- vite.config.js
+|-- public/
+|   `-- resume.pdf
+|-- src/
+|   |-- App.jsx
+|   |-- main.jsx
+|   |-- styles.css
+|   |-- components/
+|   `-- data/
+|       `-- projects.js
+|-- docs/
+`-- resume.pdf
+```
