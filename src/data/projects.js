@@ -1,0 +1,174 @@
+export const projectCategories = ['All', 'Infrastructure', 'Networking', 'Cloud', 'Tools'];
+
+export const projects = [
+  {
+    title: 'Home Network Infrastructure Lab',
+    subtitle: 'HA DNS & Core Services',
+    status: 'Mature / Finalizing',
+    statusTone: 'mature',
+    categories: ['Infrastructure', 'Networking'],
+    focus: 'HA DNS, monitoring, Tailscale subnet routing, Proxmox-hosted services',
+    summary:
+      'Self-hosted infrastructure lab focused on high-availability DNS, recursive DNS, monitoring, alerting, remote access, and Proxmox-hosted services.',
+    proof: ['HA DNS failover', 'Monitoring and alerts', 'Remote access validated'],
+    tools: [
+      'Pi-hole',
+      'Keepalived',
+      'Gravity Sync',
+      'Unbound',
+      'Prometheus',
+      'Grafana',
+      'Alertmanager',
+      'Tailscale',
+      'Proxmox',
+      'Raspberry Pi',
+      'Docker',
+    ],
+    details: [
+      {
+        label: 'Problem',
+        text: 'Needed more control and visibility over home DNS, monitoring, service availability, and remote infrastructure access instead of relying only on consumer router defaults.',
+      },
+      {
+        label: 'Implementation',
+        text: 'Built Pi-hole DNS, Keepalived VIP failover, Gravity Sync replication, Unbound recursive DNS, Prometheus/Grafana monitoring, Alertmanager notifications, Tailscale remote access, and Proxmox-hosted services.',
+      },
+      {
+        label: 'Validation',
+        text: 'Validated DNS behavior, failover between Pi-hole nodes, recursive DNS resolution, monitoring targets, alert testing, service availability, and remote management access.',
+      },
+      {
+        label: 'Outcome',
+        text: 'Created a documented infrastructure foundation that demonstrates DNS control, service monitoring, high availability concepts, remote access, and operational validation.',
+      },
+    ],
+    links: [
+      {
+        label: 'GitHub Repo',
+        href: 'https://github.com/stayZ3RO/home-network-infrastructure-HA-DNS',
+      },
+    ],
+  },
+  {
+    title: 'Managed Network Infrastructure Lab',
+    subtitle: 'Router, Switching & Segmentation',
+    status: 'Active / Phase 1 Complete',
+    statusTone: 'active',
+    categories: ['Infrastructure', 'Networking'],
+    focus:
+      'ER605/Omada cutover complete; subnetting, VLAN planning, firewall policy, pilot VLAN, controlled renumbering planned',
+    summary:
+      'Migrated the network core from a flat consumer-style setup to managed infrastructure using a TP-Link ER605 router/firewall, Omada-managed switch, and Omada Controller.',
+    proof: ['Managed cutover', 'Topology documented', 'Segmentation planned'],
+    tools: [
+      'TP-Link ER605',
+      'Omada Controller',
+      'TL-SG2210P',
+      'Deco AP mode',
+      'Proxmox',
+      'VLAN planning',
+      'DHCP',
+      'DNS',
+      'Topology diagrams',
+    ],
+    details: [
+      {
+        label: 'Problem',
+        text: 'The original home network had limitations around control, segmentation, visibility, and documentation. The lab moves toward a more enterprise-style managed routing and switching model.',
+      },
+      {
+        label: 'Implementation',
+        text: 'Performed a managed network cutover using an Omada-managed router and switch, updated the physical and logical topology, and documented validation steps after cutover.',
+      },
+      {
+        label: 'Validation',
+        text: 'Validated internet access, DNS behavior, client connectivity, AP mode behavior, router/switch management, DHCP behavior, and service reachability after the cutover.',
+      },
+      {
+        label: 'Next Steps',
+        text: 'Continue subnetting, VLAN planning, firewall policy design, pilot VLAN testing, and controlled renumbering without overstating segmentation as finished.',
+      },
+    ],
+    links: [
+      {
+        label: 'GitHub Repo',
+        href: 'https://github.com/stayZ3RO/home-network-managed-infrastructure-lab',
+      },
+    ],
+  },
+  {
+    title: 'VPS Cloud Infrastructure Lab',
+    subtitle: 'Linux, Docker & Public Services',
+    status: 'In Progress',
+    statusTone: 'progress',
+    categories: ['Cloud', 'Infrastructure'],
+    focus: 'Linux VPS, Docker, reverse proxy, HTTPS, monitoring, backups',
+    summary:
+      'VPS-based cloud infrastructure lab for Linux administration, Docker Compose, reverse proxying, HTTPS, secure remote access, monitoring, backups, and public-facing application hosting.',
+    proof: ['Linux VPS buildout', 'Public DNS path', 'HTTPS routing planned'],
+    tools: [
+      'Linux VPS',
+      'Docker',
+      'Docker Compose',
+      'DNS records',
+      'Reverse proxy planning',
+      'HTTPS',
+      'Cloudflare planning',
+      'Netcup VPS',
+      'RackNerd VPS',
+      'Monitoring',
+      'Backups',
+    ],
+    details: [
+      {
+        label: 'Problem',
+        text: 'Extends homelab experience into public infrastructure, domain management, Linux server administration, and self-hosted application deployment.',
+      },
+      {
+        label: 'Implementation',
+        text: 'Building a VPS-based environment using Linux servers, Dockerized services, domain/DNS configuration, reverse proxy and HTTPS planning, monitoring, and backup workflows.',
+      },
+      {
+        label: 'Validation',
+        text: 'Planned validation includes DNS records, service reachability, firewall rules, HTTPS routing, container health, remote access, uptime monitoring, and backup/restore workflows.',
+      },
+      {
+        label: 'Outcome',
+        text: 'Creates a cloud infrastructure learning path that connects homelab operations with Linux server administration, public DNS, hosting, and future self-hosted applications.',
+      },
+    ],
+    links: [
+      {
+        label: 'GitHub Repo',
+        href: 'https://github.com/stayZ3RO/vps-cloud-infra-lab',
+      },
+    ],
+  },
+  {
+    title: 'Service Desk Toolkit',
+    subtitle: 'PowerShell Diagnostics & Reporting',
+    status: 'Private / In Development',
+    statusTone: 'private',
+    categories: ['Tools'],
+    focus: 'PowerShell diagnostics, reporting, future repair/remediation workflows',
+    summary:
+      'Private PowerShell toolkit for repeatable service desk diagnostics, report collection, and future repair/remediation workflows.',
+    proof: ['Private toolkit', 'Diagnostics focus', 'Repair workflows planned'],
+    tools: ['PowerShell', 'Windows diagnostics', 'Reporting', 'Endpoint support', 'Runbooks'],
+    details: [
+      {
+        label: 'Problem',
+        text: 'Common service desk checks can become repetitive and inconsistent without a small, documented toolkit for gathering useful diagnostic signals.',
+      },
+      {
+        label: 'Implementation',
+        text: 'Building private PowerShell scripts for diagnostics and reporting first, with repair and remediation workflows planned only after validation.',
+      },
+      {
+        label: 'Outcome',
+        text: 'Aims to improve support consistency, speed up information gathering, and reinforce practical scripting habits without exposing internal or sensitive workflows.',
+      },
+    ],
+    links: [],
+  },
+];
